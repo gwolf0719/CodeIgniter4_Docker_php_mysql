@@ -5,7 +5,7 @@ if [ ! -d  "www" ]; then
 	echo "mkdir====="
 	cp -R files/framework-master www
 	cp -R files/phpMyAdmin www/public
-	
+	cp files/env www/.env 
 	chmod -R 777 www/writable
 fi
 
@@ -18,8 +18,6 @@ nginx -c /etc/nginx/nginx.conf &
 # mysql
 
 MYSQL_ROOT_PWD="dev"
-# MYSQL_USER="dev"
-# MYSQL_USER_PWD="dev"
 MYSQL_USER_DB="dev"
 
 if [ ! -d "/run/mysqld" ]; then
