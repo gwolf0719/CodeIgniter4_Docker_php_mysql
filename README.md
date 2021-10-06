@@ -10,13 +10,17 @@
 
 # 使用說明 
 ***1.封裝***  
-    docker build -t www .  
-    
-***2.啟動***   
-    docker run -d --name www -p 80:80 -p 3306:3306 -v $PWD:/web -v $PWD/mysqlfile:/var/lib/mysql  www   
+```bash  
+docker build -t www .  
+```
 
-#db  
+***2.啟動***   
+```bash   
+docker run -d --name www -p 80:80 -p 3306:3306 -v $PWD:/web -v $PWD/mysqlfile:/var/lib/mysql  www   
+```
+# db 參數設定   
+```  
 dbname = dev 
 user = root 
 pwd = dev
-
+```
