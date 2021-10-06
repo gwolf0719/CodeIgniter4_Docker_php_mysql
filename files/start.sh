@@ -7,8 +7,9 @@ if [ ! -d  "www" ]; then
 	cp -R files/phpMyAdmin www/public
 	cp files/env www/.env 
 	chmod -R 777 www/writable
-	rm -f www/.gitignore
-	mv files/gitignore www/.gitignore
+	rm -f .gitignore
+	mv files/gitignore .gitignore
+	rm -rf .git
 	git remote remove origin
 	rm -rf files
 fi
