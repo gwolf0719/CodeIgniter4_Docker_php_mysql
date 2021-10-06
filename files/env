@@ -1,8 +1,8 @@
-app.baseURL = 'http://localhost:8080'
-database.default.hostname = "momoko_mysql"
-database.default.database = 'codeigniter4'
-database.default.username = 'codeigniter4'
-database.default.password = 'codeigniter4'
+app.baseURL = 'http://localhost'
+database.default.hostname = "localhost"
+database.default.database = 'dev'
+database.default.username = 'root'
+database.default.password = 'dev'
 database.default.DBDriver = 'MySQLi'
 database.default.charset = 'utf8mb4'
 database.default.DBCollat = 'utf8mb4_general_ci'
