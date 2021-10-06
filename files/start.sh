@@ -11,7 +11,6 @@ if [ ! -d  "www" ]; then
 	mv files/gitignore .gitignore
 	rm -rf .git
 	git remote remove origin
-	rm -rf files
 fi
 
 
