@@ -30,8 +30,4 @@ docker run -d --name www -p 80:80 -p 3306:3306 -v $PWD:/web -v $PWD/mysqlfile:/v
 設定位置在 file/start.sh 中的  
 > MYSQL_ROOT_PWD="dev"  
 > MYSQL_USER_DB="dev"  
-```  
-dbname = dev 
-user = root 
-pwd = dev
-```
+
